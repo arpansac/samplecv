@@ -1,0 +1,132 @@
+<!-- Let's start making the resume, we'll make a good code structure and keep things reusable as much as possible -->
+
+
+<html>
+
+	<head>
+
+		<title>Resume | Iron Man</title>
+
+		<!-- Again relative linking of the css file for the style -->
+		<link rel="stylesheet" type="text/css" href="static/stylesheets/style.css">
+
+	</head>
+
+	<body>
+
+		<!-- unique id given to the header -->
+		<header id="body-header">
+
+			<!-- nav signifies navigation element on the page -->
+			<nav>
+				<!-- horizontal-list for making the list horizontal and text-center is used for center aligning the text anywhere the class is used -->
+				<!-- Menu is a list, so we use ul tag -->
+				<ul class="horizontal-list text-center">
+					<li>
+						<a class="white-text" href="#">HOME</a>
+					</li>
+					<li>
+						<a class="white-text" href="#">ABOUT</a>
+					</li>
+					<li>
+						<!-- since each menu item is a link, we have used <a> tag, putting the id of the target element makes the page go to that element when this <a> element is clicked-->
+						<a class="white-text" href="#work">WORK</a>
+					</li>
+					<li>
+						<a class="white-text" href="#">PORTFOLIO</a>
+					</li>
+					<li>
+						<a class="white-text" href="#">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- content and social icons grouped into one division -->
+			<div id="body-header-content">
+				<div class="text-center white-text">
+					<h1>I'm Iron Man</h1>
+					<p>
+						I fly in an Iron Suit, shoot missiles, drive an Audi. <span class="grey-text">I also own Stark Industries.</span>
+					</p>
+				</div>
+
+				<div class="social-icons">
+					<!-- multiple classes can added with a space between their names -->
+					<ul class="horizontal-list text-center white-text">
+						<li>
+							<img src="static/images/sm-facebook-icon.png">
+						</li>
+						<li>
+							<img src="static/images/sm-twitter-icon.png">
+						</li>
+						<li>
+							<img src="static/images/sm-youtube-icon.png">
+						</li>
+						<li>
+							<img src="static/images/sm-google-icon.png">
+						</li>
+						<li>
+							<img src="static/images/sm-linkedin-icon.png">
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</header>
+
+		<main>
+			<!-- This is the section to which that <a> tag points  -->
+			<section id="work">
+				<!-- divide the section into 2 parts, LHS and RHS -->
+				<div class="lhs">
+					<p class="section-heading">
+						Skills
+					</p>
+
+				</div>
+				<div class="rhs">
+					<p>
+						Lorem ipsum dolor sit amet, vix te quidam commune offendit. Ei dissentiunt ullamcorper vel, vix putant aliquip copiosae no. Mucius interesset at vix, pri congue dolores interesset in, id partem oporteat vim. Partem doming vel ad, atqui legimus noluisse sit eu.
+					</p>
+
+					<div>
+						<!-- this is the progress bar, outer div is the container with a specific height and background color -->
+						<div class="progress-display">
+							<!-- the class added to inner div makes it expand to a specific width as per the percentage desired -->
+							<div class="thirty-percent"></div>
+						</div>
+
+						<div class="progress-display">
+							<div class="thirty-five-percent"></div>
+						</div>
+
+						<div class="progress-display">
+							<div class="ninety-five-percent"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</main>
+
+		<footer></footer>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

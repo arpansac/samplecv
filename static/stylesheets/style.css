@@ -1,0 +1,130 @@
+/*removing extra margin already present in the body*/
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*remove underline from all the <a> tags */
+a{
+	text-decoration: none;
+}
+
+
+#body-header{
+	/*relative path of the background image*/
+	background-image: url(../images/header-background.jpg);
+
+	/*100vh means 100percent of the viewport height, viewport is the visible area*/
+	height: 100vh;
+	background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*remove bullets using list-style and also remove the extra padding from the list elements (ul)*/
+.horizontal-list{
+	list-style: none;
+	padding-left: 0;
+
+}
+
+
+/*access all the <li> elements inside horizontal-list*/
+.horizontal-list li{
+	display: inline-block;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.white-text{
+	color: white;
+}
+
+
+#body-header-content{
+	margin-top: 25vh;
+}
+
+
+/* all the <li> inside all <ul> inside all <nav> inside body-header */
+#body-header nav ul li{
+	margin-left: 8px;
+    margin-right: 8px;
+}
+
+#body-header .social-icons li img{
+	filter: brightness(5);
+	border-radius: 50%;
+}
+
+
+.grey-text{
+	color: grey;
+}
+
+
+/*designing each section*/
+section{
+	height: 100vh;
+}
+
+section .lhs{
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	/*background-color: red;*/
+}
+
+section .lhs{
+	vertical-align: top;
+}
+
+section .lhs .section-heading{
+	border-bottom: 10px solid #12abb0;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+section .rhs{
+	display: inline-block;
+	width: 78%;
+	height: 100%;
+	/*background-color: blue;*/
+}
+
+/*example of overflow*/
+/*section .rhs p{
+	height: 35px;
+    overflow: scroll;
+}*/
+
+
+/*design of the progress bar*/
+/*give dimensions of the progress-display*/
+.progress-display{
+	height: 35px;
+	background-color: grey;
+	margin-bottom: 50px;
+}
+
+/*inner progress percentage*/
+.thirty-percent{
+	height: 100%;
+	background-color: black;
+	width: 30%;
+}
+
+.thirty-five-percent{
+	height: 100%;
+	background-color: black;
+	width: 35%;
+}
+
+.ninety-five-percent{
+	height: 100%;
+	background-color: black;
+	width: 95%;
+}
